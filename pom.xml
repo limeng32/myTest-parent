@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>myTest-log</module>
-		<module>myTest-Log2</module>
+		<module>myTest-servlet</module>
 	</modules>
 	<properties>
 		<log4j2.version>2.7</log4j2.version>

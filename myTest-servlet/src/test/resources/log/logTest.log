@@ -1,0 +1,9 @@
+2017.02.16 at 15:26:08.239 CST WARN  myTest.LogWorker 24 testLog - !!!
+2017.02.16 at 15:26:08.241 CST ERROR myTest.LogWorker 25 testLog - !!!
+2017.02.16 at 15:26:08.242 CST DEBUG myTest.LogWorker 26 testLog - !!!
+2017.02.16 at 15:28:04.572 CST WARN  myTest.LogWorker 24 testLog - !!!
+2017.02.16 at 15:28:04.574 CST ERROR myTest.LogWorker 25 testLog - !!!
+2017.02.16 at 15:28:04.575 CST DEBUG myTest.LogWorker 26 testLog - !!!
+2017.02.16 at 15:37:46.096 CST WARN  myTest.LogWorker 24 testLog - !!!
+2017.02.16 at 15:37:46.098 CST ERROR myTest.LogWorker 25 testLog - !!!
+2017.02.16 at 15:37:46.099 CST DEBUG myTest.LogWorker 26 testLog - !!!
