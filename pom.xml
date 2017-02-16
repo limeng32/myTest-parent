@@ -9,10 +9,12 @@
 	<modules>
 		<module>myTest-log</module>
 		<module>myTest-servlet</module>
+		<module>myTest-web</module>
 	</modules>
 	<properties>
 		<log4j2.version>2.7</log4j2.version>
 		<junit.version>4.7</junit.version>
+		<javax.servlet-api.version>3.0.1</javax.servlet-api.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -37,12 +39,27 @@
 				<version>${junit.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${javax.servlet-api.version}</version>
+				<scope>provided</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
 		<resources>
 			<resource>
 				<directory>${project.basedir}/src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+					<include>**/*.vm</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>${project.basedir}/src/main/webapp</directory>
 				<filtering>true</filtering>
 				<includes>
 					<include>**/*.xml</include>
