@@ -34,7 +34,9 @@ public class LogWorker {
 			if (filePath != null && fileName != null) {
 				source = new ConfigurationSource(new FileInputStream(filePath + "/" + fileName));
 			} else {
-				source = new ConfigurationSource(new FileInputStream("src/main/webapp/WEB-INF/log4j2-worker1.xml"));
+				// String path1 = "src/main/webapp/WEB-INF/log4j2-worker1.xml";
+				String path2 = "../webapps/myTest-web/WEB-INF/log4j2-worker1.xml";
+				source = new ConfigurationSource(new FileInputStream(path2));
 			}
 			Configurator.initialize(null, source);
 			Logger logger = LogManager.getLogger(LogWorker.class);
